@@ -1,0 +1,126 @@
+/*GENERALI*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  height: 80px;
+  background-color: #3161E0;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*HEADERr*/
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
+header .logo{
+  
+}
+/*menu lista*/
+.menu ul{
+  display: flex;
+  list-style: none;
+}
+.menu ul li{
+  margin: 0 15px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+/*bottone login*/
+.button-white{
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+/*jumbotron*/
+.jumbotron{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(../img/._jumbo.png);
+}
+.jumbo{
+  width: 40%;
+  background-color: #EE82EE;
+}
+/*MAIN*/
+section{
+  padding: 30px 0;
+  min-height: 400px;
+}
+section .container{
+  display: flex;
+  height: 400px;
+}
+.grigio{
+  background-color: lightgrey;
+}
+section .container .immagine{
+  width: 60%;
+  border: 1.5px dashed black ;
+  background-color: #1E90FF;
+}
+section .container .text{
+  width: 40%;
+  border: 1.5px dashed black ;
+  background-color: #FFC0CB;
+}
+
+section .bottom .container{
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: green;
+}
+/*FOOTER*/
+footer{
+  background-color: black;
+}
+/*parte alta*/
+.top{
+  display: flex;
+  height: 300px;
+}
+.col-social{
+  width: calc(100% / 3);
+  height: 100%;
+  background-color: #F08080;
+}
+.col-menu{
+  display: flex;
+  width: calc(100% / 6);
+  height: 100%;
+  border: 1.5px dashed white ;
+  background-color: #20B2AA;
+}
+/*parte bassa*/
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid white;
+  background-color: #7FFFD4;
+}
+
+footer .bottom .logo{
+  border: 1.5px dashed black;
+}
+footer .bottom button{
+  border: 1.5px dashed black;
+}
