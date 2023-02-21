@@ -7,13 +7,9 @@
 body{
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-header{
-  height: 80px;
-  background-color: #3161E0;
-}
 .container{
   width: 80%;
-  max-width: 1080px;
+  max-width:1080;
   margin: 0 auto;
 }
 a{
@@ -33,23 +29,26 @@ a{
 }
 .button.small{
   font-size: 12px;
-  padding: 5px 10px;
+  padding: 7px 10px;
   border-radius: 15px;
 }
 .button.big{
   font-size: 14px;
-  padding: 10px 20px;
+  padding: 14px 20px;
   border-radius: 20px;
 }
 /*HEADERr*/
+header{
+  height: 80px;
+  background-color: #3161E0;
+}
 header .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  font-size: 20px;
+  font-size: 16px;
 }
-
 /*menu lista*/
 .menu ul{
   display: flex;
@@ -59,9 +58,11 @@ header .container{
   margin: 0 15px;
 }
 .menu ul li a{
-  color: white;
+  color: #F8F9FE;
 }
-
+.menu ul li a:hover{
+  text-decoration: underline;
+}
 /*jumbotron*/
 .jumbotron{
   display: flex;
@@ -80,12 +81,10 @@ header .container{
   font-size: 45px;
   font-weight: bold;
   color: white;
-  padding-bottom: ;
 }
 .jumbo p{
   font-size: 18px;
   color: white;
-  text-align: justify;
   padding: 30px 0;  
 }
 .button.white.big{
@@ -96,7 +95,6 @@ header .container{
   padding-right: 5px;
   font-size: 19px;
 }
-
 /*MAIN*/
 section{
   display: flex;
@@ -120,9 +118,9 @@ section .container .immagine{
 section .container .immagine img{
   width: 500px;
 }
-section .container .text{
+.text{
   width: 40%;
-  padding: 30px 50px;
+  padding: 30px 70px;
 }
 .text h2{
   font-size: 40px;
@@ -136,18 +134,28 @@ section .container.bottom{
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  padding: 50px 0;
 }
 .testo-bottom h2{
   font-size: 40px;
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 .testo-bottom p{
   font-size: 15px;
+  padding: 0 60px;
 }
 .call-to-action .button.big.blue::before{
   content: '\1F817';
   padding-right: 5px;
   font-size: 19px;
+}
+.call-to-action{
+  margin-bottom: 50px;
+}
+.call-to-action p{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 /*FOOTER*/
 footer{
@@ -173,6 +181,11 @@ footer{
 }
 .col-social img{
   width: 15px;
+}
+.col-social span::after{
+  content: '\2B9F';
+  padding-left: 5px;
+  font-size: 10px;
 }
 .ico-social i{
   padding: 10px 10px 10px 0;
