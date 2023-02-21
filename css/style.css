@@ -12,11 +12,13 @@ header{
   background-color: #3161E0;
 }
 .container{
-  width: 90%;
-  max-width: 1200px;
+  width: 80%;
+  max-width: 1080px;
   margin: 0 auto;
 }
-
+a{
+  text-decoration: none;
+}
 /*HEADERr*/
 header .container{
   display: flex;
@@ -37,7 +39,6 @@ header .logo{
   margin: 0 15px;
 }
 .menu ul li a{
-  text-decoration: none;
   color: white;
 }
 /*bottone login*/
@@ -50,7 +51,6 @@ header .logo{
   border-radius: 15px;
 }
 .button-black{
-  text-decoration: none;
   color: white;
   background-color: black;
   padding: 5px 15px;
@@ -91,10 +91,9 @@ section{
 }
 section .container{
   display: flex;
-  height: 400px;
 }
 .grigio{
-  background-color: lightgrey;
+  background-color: #F6F6F6;
 }
 section .container .immagine{
   display: flex;
@@ -119,46 +118,62 @@ section .container .text{
   padding: 20px 0;
 }
 
-section .bottom .container{
+section .container.bottom{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: green;
+  text-align: center;
 }
+.testo-bottom h2{
+  font-size: 40px;
+}
+.testo-bottom p{
+  font-size: 15px;
+}
+
 /*FOOTER*/
 footer{
-  background-color: black;
+  background-color: #23272A;
+  color: #F9F9F9;
 }
 /*parte alta*/
 .top{
   display: flex;
   height: 300px;
+  padding-top: 50px;
 }
 .col-social{
   width: calc(100% / 3);
   height: 100%;
-  background-color: #F08080;
+}
+.titoli-sezioni{
+  color: #748BDF;
+}
+.col-social p.titoli-sezioni{
+  font-size: 26px;
+  font-weight: 700;
+}
+.col-social img{
+  width: 15px;
 }
 .col-menu{
   display: flex;
   width: calc(100% / 6);
   height: 100%;
-  border: 1.5px dashed white ;
-  background-color: #20B2AA;
+}
+.col-menu ul{
+  list-style: none;
+  font-size: 14px;
+}
+.col-menu ul li{
+  padding-top: 10px;
 }
 /*parte bassa*/
-.bottom{
+.registrazione{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  border-top: 1px solid white;
-  background-color: #7FFFD4;
+  border-top: 1px solid #434E72;
 }
 
-footer .bottom .logo{
-  border: 1.5px dashed black;
-}
-footer .bottom button{
-  border: 1.5px dashed black;
-}
