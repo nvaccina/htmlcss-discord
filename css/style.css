@@ -19,6 +19,28 @@ header{
 a{
   text-decoration: none;
 }
+.button.white{
+  color: #111619;
+  background-color: #FFFFFF;
+}
+.button.black{
+  color: #F5F5F5;
+  background-color: #23272A;
+}
+.button.blue{
+  color: #FBFBFE;
+  background-color: #8EA1E1;
+}
+.button.small{
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.button.big{
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
 /*HEADERr*/
 header .container{
   display: flex;
@@ -27,9 +49,7 @@ header .container{
   height: 100%;
   font-size: 20px;
 }
-header .logo{
-  
-}
+
 /*menu lista*/
 .menu ul{
   display: flex;
@@ -41,21 +61,7 @@ header .logo{
 .menu ul li a{
   color: white;
 }
-/*bottone login*/
-.button-white{
-  text-align: right;
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  padding: 5px 10px;
-  border-radius: 15px;
-}
-.button-black{
-  color: white;
-  background-color: black;
-  padding: 5px 15px;
-  border-radius: 15px;
-}
+
 /*jumbotron*/
 .jumbotron{
   display: flex;
@@ -66,7 +72,6 @@ header .logo{
   background-size: cover;
 }
 .jumbo{
-  flex-wrap: wrap;
   width: 40%;
   margin: 0 20px;
   text-align: center;
@@ -83,11 +88,22 @@ header .logo{
   text-align: justify;
   padding: 30px 0;  
 }
+.button.white.big{
+  margin-right: 20px;
+}
+.jumbo .button.white.big::before{
+  content: '\1F817';
+  padding-right: 5px;
+  font-size: 19px;
+}
 
 /*MAIN*/
 section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 30px 0;
-  min-height: 400px;
+  min-height: 500px;
 }
 section .container{
   display: flex;
@@ -102,7 +118,6 @@ section .container .immagine{
   width: 60%;
 }
 section .container .immagine img{
-
   width: 500px;
 }
 section .container .text{
@@ -111,13 +126,11 @@ section .container .text{
 }
 .text h2{
   font-size: 40px;
-
 }
 .text p{
   font-size: 14px;
   padding: 20px 0;
 }
-
 section .container.bottom{
   flex-direction: column;
   align-items: center;
@@ -126,11 +139,16 @@ section .container.bottom{
 }
 .testo-bottom h2{
   font-size: 40px;
+  padding: 20px 0;
 }
 .testo-bottom p{
   font-size: 15px;
 }
-
+.call-to-action .button.big.blue::before{
+  content: '\1F817';
+  padding-right: 5px;
+  font-size: 19px;
+}
 /*FOOTER*/
 footer{
   background-color: #23272A;
@@ -139,7 +157,7 @@ footer{
 /*parte alta*/
 .top{
   display: flex;
-  height: 300px;
+  min-height: 300px;
   padding-top: 50px;
 }
 .col-social{
@@ -155,6 +173,9 @@ footer{
 }
 .col-social img{
   width: 15px;
+}
+.ico-social i{
+  padding: 10px 10px 10px 0;
 }
 .col-menu{
   display: flex;
@@ -174,6 +195,6 @@ footer{
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  margin-top: 30px;
   border-top: 1px solid #434E72;
 }
-
