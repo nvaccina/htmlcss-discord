@@ -97,15 +97,18 @@ section .container{
   background-color: lightgrey;
 }
 section .container .immagine{
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60%;
 }
 section .container .immagine img{
+
   width: 500px;
 }
 section .container .text{
   width: 40%;
-  padding: 30px;
+  padding: 30px 50px;
 }
 .text h2{
   font-size: 40px;
