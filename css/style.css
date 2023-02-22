@@ -15,6 +15,7 @@ body{
 a{
   text-decoration: none;
 }
+
 .button.white{
   color: #111619;
   background-color: #FFFFFF;
@@ -71,6 +72,7 @@ header .container{
   height: 500px;
   background-image: url(../img/jumbo.png);
   background-size: cover;
+  background-position: center;
 }
 .jumbo{
   width: 40%;
@@ -94,6 +96,9 @@ header .container{
   content: '\1F817';
   padding-right: 5px;
   font-size: 19px;
+}
+.jumbo .button.black.button.big{
+  display: inline-block;
 }
 /*MAIN*/
 section{
@@ -152,10 +157,12 @@ section .container.bottom{
 .call-to-action{
   margin-bottom: 50px;
 }
-.call-to-action p{
+.call-to-action h3{
   font-size: 25px;
   font-weight: bold;
+  padding-top: 30px;
   margin-bottom: 30px;
+  background-image: url(../img/stars.svg);
 }
 /*FOOTER*/
 footer{
@@ -187,7 +194,12 @@ footer{
   padding-left: 5px;
   font-size: 10px;
 }
+.ico-social ul{
+  display: flex;
+  list-style: none;  
+}
 .ico-social i{
+  color: white;
   padding: 10px 10px 10px 0;
 }
 .col-menu{
@@ -210,4 +222,10 @@ footer{
   height: 100px;
   margin-top: 30px;
   border-top: 1px solid #434E72;
+}
+.onda{
+  height: 100px;
+  filter: opacity(0.04);
+  background-image: url(../img/wave.svg);
+  background-size: cover;  
 }
